@@ -15,36 +15,82 @@ body {
 main {
     display: flex;
     justify-content: center;
-    padding-top: 350px;
+    padding-top: 284px;
 }
 
 .resultCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     background: var(--Light-slate-blue-background);
     opacity: 0.5;
+    padding: 38px 59px;
 }
 
-.title {
+.resultTitle {
     font-size: 24px;
+    margin: 0;
+    padding-bottom: 34px;
+    padding-right: 6px;
+}
 
+.averageScore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    background: red;
 }
 
 .averageNum {
     font-size: 70px;
-    font-weight: 900;
+    font-weight: 800;
+}
+
+.score {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 13px;
 }
 
 .description {
-    width: 350px;
+    width: 250px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .summaryCard {
     text-align: center;
+    padding: 38px 40px;
+    background: goldenrod;
+    opacity: 0.3;
+}
+
+.summaryTitle {
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 28px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 li {
     display: flex;
     align-items: center;
+    width: 289px;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(248, 178, 178);
 }
 
 .back {

@@ -19,12 +19,19 @@
 }
 
 body {
-    background: white;
+    background: var(--Pale-blue);
     font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 *,
 *:after,
 *:before {
     box-sizing: border-box;
+}
+
+
+p {
+    margin: 0;
 }

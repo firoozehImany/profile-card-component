@@ -1,30 +1,28 @@
+const listItems = document.getElementById("summary-list");
+let counter = 1;
 
-fetch('data.json')
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    let jsonData = data;
-    let listItems = document.getElementById("summaryList");
-    let counter = 1;
+const getData = () => {
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const items = data.map(item => {
+                const { category, icon, score } = item;
+                const classItem = "row-" + counter;
+                counter++;
+                return `<li class="${classItem}">
+                            <div>
+                                <img alt="${category.toLowerCase()}-icon" src="${icon}"/>
+                                <span>${category}</span>
+                            </div>
+                            <div>
+                                <span>${score}</span>
+                                <span>/</span>
+                                <span>100</span>
+                            </div>
+                        </li>`
+            }).join('')
+            listItems.innerHTML = items;
+        })
+}
 
-    jsonData.forEach(function (item) {
-      let summaryList = document.createElement('li');
-      let classItem = "row-" + counter;
-      summaryList.classList.add(classItem)
-      summaryList.innerHTML =
-        '<h4>' +
-        item.category +
-        '</h4>' +
-        '<span>' +
-        item.score +
-        '</p>' +
-        '<img src="' +
-        item.icon +
-        '" alt="' +
-        item.category +
-        ' icon">';
-        listItems.appendChild(summaryList);
-        counter++;
-    });
-  });
+getData()

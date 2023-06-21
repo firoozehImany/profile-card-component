@@ -10,13 +10,13 @@ const getData = () => {
                 const classItem = "row-" + counter;
                 counter++;
                 return `<li class="${classItem}">
-                            <div>
+                            <div class="itemTitle">
                                 <img alt="${category.toLowerCase()}-icon" src="${icon}"/>
                                 <span>${category}</span>
                             </div>
-                            <div>
+                            <div class="itemScore">
                                 <span>${score}</span>
-                                <span>/</span>
+                                <span class="dash">/</span>
                                 <span>100</span>
                             </div>
                         </li>`

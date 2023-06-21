@@ -17,7 +17,7 @@ const getData = () => {
                             <div class="itemScore">
                                 <span>${score}</span>
                                 <span class="dash">/</span>
-                                <span>100</span>
+                                <span class="num">100</span>
                             </div>
                         </li>`
             }).join('')

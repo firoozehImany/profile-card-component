@@ -12,10 +12,9 @@ main {
 .product {
     display: flex;
     justify-content: center;
-    background: red;
+    /* background: red; */
     width: 736px;
     margin: 0 auto;
-    opacity: 0.3;
     border-radius: 34px;
 }
 
@@ -25,9 +24,9 @@ main {
     align-items: center;
     text-align: center;
     border-radius: 34px;
-    opacity: 0.5;
     padding: 38px 59px;
-    background: var(--Light-slate-blue-background);
+    color: var(--Light-lavender);
+    /* background: linear-gradient(var(--Light-slate-blue-background),var(--Light-royal-blue-background)); */
 }
 
 .resultTitle {
@@ -45,20 +44,22 @@ main {
     height: 200px;
     border-radius: 100px;
     margin-bottom: 28px;
-    background: red;
+    /* background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle)); */
 }
 
 .averageNum {
     font-size: 70px;
     font-weight: 800;
     height: 85px;
+    color: var(--White);
 }
 
 .score {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     padding-right: 3px;
+    color: var(--White);
 }
 
 .description {
@@ -70,7 +71,6 @@ main {
 .summaryCard {
     text-align: center;
     padding: 38px 40px;
-    opacity: 0.3;
 }
 
 .summaryTitle {
@@ -94,11 +94,29 @@ li {
     width: 289px;
     border-radius: 12px;
     padding: 16px 17px;
-    background: rgb(248, 178, 178);
 }
+
+.row-1 {
+    color: var(--Light-red);
+    background: var(--Light-red-light)
+}
+
+.row-2 {
+    color: var(--Orangey-yellow);
+    background: var(--Orangey-yellow-light);
+}
+
+.row-3 {
+    color: var(--Green-teal);
+    background: var(--Green-teal-light);
+}
+
 .row-4 {
     margin-bottom: 40px;
+    color: var(--Cobalt-blue);
+    background: var(--Cobalt-blue-light);
 }
+
 .itemTitle {
     display: flex;
     align-items: center;
@@ -109,10 +127,18 @@ li {
     display: flex;
     justify-content: space-between;
     width: 71px;
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
 }
 
 .dash {
     padding-left: 5px;
+    color: var(--Dark-gray-blue-light);
+    font-weight: 700;
+}
+
+.num {
+    color: var(--Dark-gray-blue-light);
 }
 
 button {
@@ -121,6 +147,9 @@ button {
     border-radius: 50px;
     font-size: 18px;
     font-weight: 500;
+    background: var(--Dark-gray-blue);
+    color: var(--White);
+    border: none;
 }
 
 .back {
@@ -129,4 +158,3 @@ button {
     top: 0;
     left: 0;
 }
-

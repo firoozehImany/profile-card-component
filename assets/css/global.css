@@ -2,16 +2,16 @@
 
 :root {
     --Light-red: hsl(0, 100%, 67%);
-    --Light-red-light: hsla(0, 100%, 67%, 10%);
+    --Light-red-light: hsla(0, 100%, 67%, 6%);
 
     --Orangey-yellow: hsl(39, 100%, 56%);
-    --Orangey-yellow-light: hsla(39, 100%, 56%, 10%);
+    --Orangey-yellow-light: hsla(39, 100%, 56%, 7%);
 
     --Green-teal: hsl(166, 100%, 37%);
-    --Green-teal-light: hsla(166, 100%, 37%, 10%);
+    --Green-teal-light: hsla(166, 100%, 37%, 6%);
 
     --Cobalt-blue: hsl(234, 85%, 45%);
-    --Cobalt-blue-light: hsla(234, 85%, 45%, 10%);
+    --Cobalt-blue-light: hsla(234, 85%, 45%, 6%);
 
     --Light-slate-blue-background: hsl(252, 97%, 63%);
     --Light-royal-blue-background: hsl(241, 81%, 54%);
@@ -37,13 +37,4 @@ body {
 *:after,
 *:before {
     box-sizing: border-box;
-}
-
-p {
-    margin: 0;
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
 }

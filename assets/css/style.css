@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     background: var(--White);
-    margin: 284px auto;
+    margin: 22% auto;
     max-width: 736px;
     border-radius: 34px;
     box-shadow: 10px 30px 40px 20px var(--Pale-blue);
@@ -22,10 +22,10 @@ body {
 
 .resultCard {
     display: flex;
-    width: 368px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 368px;
     border-radius: 34px;
     padding: 38px 59px;
     color: var(--Light-lavender);
@@ -175,6 +175,7 @@ body {
 @media screen and (max-width:760px) {
     .product {
         flex-direction: column;
+
         max-width: 400px;
     }
 
@@ -185,6 +186,7 @@ body {
     .description {
         margin-bottom: 0;
         font-size: 14px;
+        margin: 5% auto;
     }
 
     .summaryCard {

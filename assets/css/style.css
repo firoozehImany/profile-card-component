@@ -22,7 +22,7 @@ body {
 
 .resultCard {
     display: flex;
-    width: 100%;
+    width: 368px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -78,7 +78,7 @@ body {
 .summaryCard {
     text-align: center;
     padding: 38px 40px;
-    width: 100%;
+    width: 368px;
 }
 
 /* .showSummary {

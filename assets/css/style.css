@@ -9,8 +9,8 @@ body {
     display: flex;
     justify-content: center;
     background: var(--White);
-    margin: 22.1% auto;
-    max-width:736px ;
+    margin: 284px auto;
+    max-width: 736px;
     border-radius: 34px;
     box-shadow: 10px 30px 40px 20px var(--Pale-blue);
     transition: max-width 2s;
@@ -50,7 +50,7 @@ body {
     background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
 }
 
-#averageNum {
+.averageNum {
     font-size: 70px;
     font-weight: 800;
     height: 85px;

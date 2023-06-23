@@ -5,7 +5,6 @@ body {
     position: relative;
 }
 
-
 .product {
     display: flex;
     justify-content: center;
@@ -46,12 +45,14 @@ body {
     background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
 }
 
-.averageNum {
+#averageNum {
     font-size: 70px;
     font-weight: 800;
     height: 85px;
     color: var(--White);
 }
+
+
 
 .scaleNum {
     opacity: 0.5;
@@ -92,33 +93,33 @@ body {
     gap: 16px;
 }
 
-li {
+#summary-list .row-1 {
+    color: var(--Light-red);
+    background: var(--Light-red-light)
+}
+
+#summary-list .row-2 {
+    color: var(--Orangey-yellow);
+    background: var(--Orangey-yellow-light);
+}
+
+#summary-list .row-3 {
+    color: var(--Green-teal);
+    background: var(--Green-teal-light);
+}
+
+#summary-list .row-4 {
+    color: var(--Cobalt-blue);
+    background: var(--Cobalt-blue-light);
+}
+
+#summary-list li {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     border-radius: 12px;
     padding: 16px 17px;
-}
-
-.row-1 {
-    color: var(--Light-red);
-    background: var(--Light-red-light)
-}
-
-.row-2 {
-    color: var(--Orangey-yellow);
-    background: var(--Orangey-yellow-light);
-}
-
-.row-3 {
-    color: var(--Green-teal);
-    background: var(--Green-teal-light);
-}
-
-.row-4 {
-    color: var(--Cobalt-blue);
-    background: var(--Cobalt-blue-light);
 }
 
 .itemTitle {
@@ -162,7 +163,6 @@ li {
     background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
 }
 
-
 @media screen and (max-width:760px) {
     .product {
         flex-direction: column;
@@ -200,6 +200,4 @@ li {
     .resultCard {
         border-radius: 0;
     }
-
-    
 }

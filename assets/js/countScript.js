@@ -13,5 +13,4 @@ function countUp(from, to) {
 
 setTimeout(() => {
     countUp(0, 76)
-}, 1000);
-
+}, 500);

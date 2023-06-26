@@ -93,7 +93,7 @@
     left: calc(50%);
     transform: translate(-50%, -50%);
     background: var(--White);
-    border-radius: 0 0 32px 32px;
+    border-radius: 0 32px 32px 0;
     text-align: center;
     padding: 42px 40px;
     width: 368px;

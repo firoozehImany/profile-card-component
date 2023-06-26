@@ -23,7 +23,7 @@
     --Pale-blue: hsl(222, 100%, 95%);
     --Light-lavender: hsl(241, 100%, 89%);
     --Dark-gray-blue: hsl(224, 30%, 27%);
-    --Dark-gray-blue-light: hsla(224, 30%, 27%, 40%);
+    --Dark-gray-blue-light: hsla(224, 30%, 27%, 50%);
 }
 
 body {

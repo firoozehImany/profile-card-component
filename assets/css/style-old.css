@@ -3,30 +3,18 @@
 
 
 .product {
-    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     background: var(--White);
-    margin: 22% auto;
-    max-width: 0;
-    border-radius: 32px;
-    box-shadow: 0 20px 50px 10px var(--Pale-blue);
-    transition: max-width 2s ease;
-}
-
-.showBack {
+    margin: 284px auto;
     max-width: 736px;
-    height: auto;
+    border-radius: 34px;
+    box-shadow: 0 20px 50px 10px var(--Pale-blue);
+    transition: max-width 2s;
 }
 
 .resultCard {
-    position: relative;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, 0);
     display: flex;
-    z-index: 1;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -35,12 +23,6 @@
     padding: 38px 59px;
     color: var(--Light-lavender);
     background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
-    transition: left 2s;
-}
-
-.moveResult {
-    left: calc(50% - 184px);
-    transform: translate(-50%, 0);
 }
 
 .resultTitle {
@@ -66,7 +48,6 @@
     font-weight: 800;
     height: 85px;
     color: var(--White);
-    transition: all 2s;
 }
 
 .scaleNum {
@@ -88,20 +69,9 @@
 }
 
 .summaryCard {
-    position: absolute;
-    top: 50%;
-    left: calc(50%);
-    transform: translate(-50%, -50%);
-    background: var(--White);
-    border-radius: 0 0 32px 32px;
     text-align: center;
-    padding: 42px 40px;
+    padding: 38px 40px;
     width: 368px;
-    transition: left 2s;
-}
-
-.showSummary {
-    left: calc(50% + 184px);
 }
 
 .summaryTitle {
@@ -191,26 +161,14 @@
 }
 
 @media screen and (max-width:760px) {
-
     .product {
-        margin: 60% auto;
-    }
+        flex-direction: column;
 
-    .showBack {
-        max-width: 375px;
+        max-width: 400px;
     }
 
     .resultCard {
         padding: 32px;
-        transition: top 2s;
-        width: 375px;
-        transform: translate(-50%, 0);
-    }
-
-    .moveResult {
-        left: 50%;
-        top: -50%;
-        transform: translate(-50%, -50%);
     }
 
     .description {
@@ -221,14 +179,6 @@
 
     .summaryCard {
         padding: 24px;
-        transition: top 2s;
-        width: 375px;
-        box-shadow: 5px 30px 40px 10px var(--Pale-blue);
-    }
-
-    .showSummary {
-        left: 50%;
-        top: 100%;
     }
 
     .summaryTitle {
@@ -240,16 +190,13 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
     .product {
-        margin: 60% auto;
+        margin: 0;
+        border-radius: 0;
     }
 
     .resultCard {
-        border-radius: 0 0 32px 32px;
-    }
-
-    .summaryCard {
         border-radius: 0;
     }
 }

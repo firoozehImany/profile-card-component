@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     background: var(--White);
-    margin: 22% auto;
+    margin: calc(50vh - 256px) auto;
     max-width: 0;
     border-radius: 32px;
     box-shadow: 0 20px 50px 10px var(--Pale-blue);
@@ -192,8 +192,8 @@
 
 @media screen and (max-width:760px) {
     .product {
-        margin: 60% auto;
         width: 0;
+        margin: calc(50vh + 10px) auto;
     }
 
     .showBack {
@@ -223,6 +223,7 @@
         padding: 24px;
         transition: top 2s;
         width: 375px;
+        border-radius: 0 0 32px 32px;
         box-shadow: 5px 30px 40px 10px var(--Pale-blue);
     }
 
@@ -241,10 +242,6 @@
 }
 
 @media screen and (max-width:400px) {
-    .product {
-        margin: 60% auto;
-    }
-
     .resultCard {
         border-radius: 0 0 32px 32px;
     }

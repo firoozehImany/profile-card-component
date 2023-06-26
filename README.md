@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://www.frontendmentor.io/solutions/results-summary-component-custom-design-html-css-js-pMDpWCSrbn)
-- Live Site URL:(https://results-summary-component-firoozehimany.vercel.app/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/results-summary-component-custom-design-html-css-js-pMDpWCSrbn)
+- Live Site URL: [Live Site at Vercel](https://results-summary-component-firoozehimany.vercel.app/)
 
 ## My process
 
@@ -38,9 +38,10 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS motion
+- CSS Motion
 - Responsive Design
 - Dedicated JavaScript
+- fetch
 
 ## Author
 

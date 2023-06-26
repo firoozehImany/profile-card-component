@@ -1,30 +1,20 @@
 @import url(/assets/css/reaset.css);
 @import url(/assets/css/global.css);
 
+
 .product {
-    position: relative;
     display: flex;
     justify-content: center;
     background: var(--White);
-    margin: 22% auto;
-    max-width: 0;
-    border-radius: 34px;
-    box-shadow: 5px 30px 40px 10px var(--Pale-blue);
-    transition: max-width 2s ease;
-}
-
-.showBack {
+    margin: 284px auto;
     max-width: 736px;
-    height: auto;
+    border-radius: 34px;
+    box-shadow: 5px 20px 40px 10px var(--Pale-blue);
+    transition: max-width 2s;
 }
 
 .resultCard {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
-    z-index: 1;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -33,11 +23,6 @@
     padding: 38px 59px;
     color: var(--Light-lavender);
     background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
-    transition: left 2s;
-}
-
-.moveResult {
-    left: calc(50% - 184px);
 }
 
 .resultTitle {
@@ -63,7 +48,6 @@
     font-weight: 800;
     height: 85px;
     color: var(--White);
-    transition: all 2s;
 }
 
 .scaleNum {
@@ -85,26 +69,15 @@
 }
 
 .summaryCard {
-    position: absolute;
-    top: 50%;
-    left: calc(50%);
-    transform: translate(-50%, -50%);
-    background: var(--White);
-    border-radius: 0 0 32px 32px;
     text-align: center;
-    padding: 42px 40px;
+    padding: 38px 40px;
     width: 368px;
-    transition: left 2s;
-}
-
-.showSummary {
-    left: calc(50% + 184px);
 }
 
 .summaryTitle {
     font-size: 24px;
     margin: 0;
-    padding-bottom: 28px;
+    padding-bottom: 28.5px;
     text-align: left;
     color: var(--Dark-gray-blue)
 }
@@ -187,24 +160,14 @@
 }
 
 @media screen and (max-width:760px) {
-
     .product {
-        margin: 60% auto;
-    }
+        flex-direction: column;
 
-    .showBack {
-        max-width: 375px;
+        max-width: 400px;
     }
 
     .resultCard {
         padding: 32px;
-        transition: top 2s;
-        width: 375px;
-    }
-
-    .moveResult {
-        left: 50%;
-        top: 0;
     }
 
     .description {
@@ -215,14 +178,6 @@
 
     .summaryCard {
         padding: 24px;
-        transition: top 2s;
-        width: 375px;
-        box-shadow: 5px 30px 40px 10px var(--Pale-blue);
-    }
-
-    .showSummary {
-        left: 50%;
-        top: 100%;
     }
 
     .summaryTitle {
@@ -234,16 +189,13 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
     .product {
-        margin: 60% auto;
+        margin: 0;
+        border-radius: 0;
     }
 
     .resultCard {
-        border-radius: 0 0 32px 32px;
-    }
-
-    .summaryCard {
         border-radius: 0;
     }
 }

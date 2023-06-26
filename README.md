@@ -19,7 +19,7 @@ Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-- See the cool effects created with JavaScript.
+- See the **cool and soft motion** created with JavaScript and css.
 
 ### Screenshot
 
@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:(https://www.frontendmentor.io/solutions/results-summary-component-custom-design-html-css-js-pMDpWCSrbn)
+- Live Site URL:(https://results-summary-component-firoozehimany.vercel.app/)
 
 ## My process
 
@@ -38,7 +38,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- CSS motion
 - Responsive Design
 - Dedicated JavaScript
 

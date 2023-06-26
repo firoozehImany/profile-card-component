@@ -194,6 +194,7 @@
 
     .product {
         margin: 60% auto;
+        width: 0;
     }
 
     .showBack {

@@ -5,9 +5,9 @@ const showSummary = document.getElementById("summaryCard")
 setTimeout(() => {
     showSummary.classList.add("showSummary")
     moveresult.classList.add("moveResult")
-}, 1500);
+}, 2000);
 
 setTimeout(() => {
     showBack.classList.add("showBack")
-}, 1200)
+}, 1700)
 

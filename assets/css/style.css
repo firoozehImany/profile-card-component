@@ -9,7 +9,7 @@
     margin: 284px auto;
     max-width: 736px;
     border-radius: 34px;
-    box-shadow: 0 30px 50px 20px var(--Pale-blue);
+    box-shadow: 0 20px 50px 0 var(--Pale-blue);
     transition: max-width 2s;
 }
 

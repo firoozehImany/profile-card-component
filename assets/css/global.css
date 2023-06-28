@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 :root {
-    --Light-red: hsl(0, 100%, 67%);
-    --Light-red-light: hsla(0, 100%, 67%, 6%);
+    --light-red: hsl(0, 100%, 67%);
+    --light-red-light: hsla(0, 100%, 67%, 6%);
 
-    --Orangey-yellow: hsl(39, 100%, 56%);
-    --Orangey-yellow-light: hsla(39, 100%, 56%, 7%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --orangey-yellow-light: hsla(39, 100%, 56%, 7%);
 
-    --Green-teal: hsl(166, 100%, 37%);
-    --Green-teal-light: hsla(166, 100%, 37%, 6%);
+    --green-teal: hsl(166, 100%, 37%);
+    --green-teal-light: hsla(166, 100%, 37%, 6%);
 
-    --Cobalt-blue: hsl(234, 85%, 45%);
-    --Cobalt-blue-light: hsla(234, 85%, 45%, 6%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --cobalt-blue-light: hsla(234, 85%, 45%, 6%);
 
-    --Light-slate-blue-background: hsl(252, 97%, 63%);
-    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --light-slate-blue-background: hsl(252, 97%, 63%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
 
-    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
-    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
 
-    --White: hsl(0, 0%, 100%);
-    --Pale-blue: hsl(222, 100%, 95%);
-    --Light-lavender: hsl(241, 100%, 89%);
-    --Dark-gray-blue: hsl(224, 30%, 27%);
-    --Dark-gray-blue-light: hsla(224, 30%, 27%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(222, 100%, 95%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --mid-gray-blue: hsla(224, 30%, 27%, 50%);
 }
 
 body {
-    background: var(--White);
+    background: var(--white);
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
     font-weight: 500;

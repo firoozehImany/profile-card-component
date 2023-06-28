@@ -1,4 +1,4 @@
-let countNum = document.getElementById("averageNum")
+let countNum = document.querySelector(".averageNum")
 
 function countUp(from, to) {
     current = from

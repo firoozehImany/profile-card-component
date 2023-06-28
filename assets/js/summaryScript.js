@@ -1,4 +1,4 @@
-const listItems = document.getElementById("summary-list");
+const listItems = document.querySelector(".summaryList");
 let counter = 1;
 
 const getData = () => {

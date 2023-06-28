@@ -112,34 +112,34 @@
     color: var(--dark-gray-blue)
 }
 
-#summary-list {
+.summaryList {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 17px;
 }
 
-#summary-list .row-1 {
+.summaryList .row-1 {
     color: var(--light-red);
     background: var(--light-red-light)
 }
 
-#summary-list .row-2 {
+.summaryList .row-2 {
     color: var(--orangey-yellow);
     background: var(--orangey-yellow-light);
 }
 
-#summary-list .row-3 {
+.summaryList .row-3 {
     color: var(--green-teal);
     background: var(--green-teal-light);
 }
 
-#summary-list .row-4 {
+.summaryList .row-4 {
     color: var(--cobalt-blue);
     background: var(--cobalt-blue-light);
 }
 
-#summary-list li {
+.summaryList li {
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,6 +1,6 @@
-const showBack = document.getElementById("product")
-const moveresult = document.getElementById("resultCard")
-const showSummary = document.getElementById("summaryCard")
+const showBack = document.querySelector(".product")
+const moveresult = document.querySelector(".resultCard")
+const showSummary = document.querySelector(".summaryCard")
 
 setTimeout(() => {
     showSummary.classList.add("showSummary")

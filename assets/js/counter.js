@@ -1,7 +1,7 @@
-let countNum = document.querySelector(".averageNum")
+let countNum = document.querySelector(".CountNumElement")
 
 function countUp(from, to) {
-    current = from
+    let current = from
     let numId = setInterval(() => {
         countNum.innerHTML = current
         if (current >= to) {
@@ -12,5 +12,7 @@ function countUp(from, to) {
 }
 
 setTimeout(() => {
-    countUp(0, 76)
+    let from = parseInt(countNum.getAttribute("data-from"));
+    let to = parseInt(countNum.getAttribute("data-to"));
+    countUp(from, to)
 }, 1000);

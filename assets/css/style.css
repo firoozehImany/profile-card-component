@@ -1,32 +1,31 @@
 @import url(/assets/css/reset.css);
 @import url(/assets/css/global.css);
-
+@import url(/assets/css/animation.css);
 
 .product {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--white);
-    margin: calc(50vh - 256px) auto;
-    max-width: 0;
-    border-radius: 32px;
-    box-shadow: 0 20px 50px 10px var(--pale-blue);
-    transition: max-width 2s ease;
+    min-height: 100vh;
 }
 
-.showBack {
-    max-width: 736px;
-    height: auto;
+.product:before {
+    position: absolute;
+    background: var(--white);
+    border-radius: 32px;
+    box-shadow: 0 20px 50px 10px var(--pale-blue);
+    width: 368px;
+    height: 512px;
+    content: "";
+    animation: scaleHorizontal 1s ease forwards;
+    animation-delay: 2s;
 }
 
 .resultCard {
-    position: relative;
-    top: -50%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: absolute;
     display: flex;
-    z-index: 1;
+    z-index: 3;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -35,12 +34,8 @@
     padding: 38px 59px;
     color: var(--light-lavender);
     background: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
-    transition: left 2s;
-}
-
-.moveResult {
-    left: calc(50% - 184px);
-    transform: translate(-50%, 0);
+    animation: moveLeft 1s ease forwards;
+    animation-delay: 2s;
 }
 
 .resultTitle {
@@ -82,26 +77,21 @@
 }
 
 .description {
-    max-width: 250px;
+    max-width: 300px;
     font-size: 18px;
-    margin-bottom: 17px;
+    margin-bottom: 17.5px;
 }
 
 .summaryCard {
     position: absolute;
-    top: 50%;
-    left: calc(50%);
-    transform: translate(-50%, -50%);
     background: var(--white);
-    border-radius: 0 32px 32px 0;
+    border-radius: 32px;
     text-align: center;
     padding: 42px 40px;
     width: 368px;
-    transition: left 2s;
-}
-
-.showSummary {
-    left: calc(50% + 184px);
+    animation: moveRight 1s ease forwards;
+    animation-delay: 2s;
+    z-index: 2;
 }
 
 .summaryTitle {
@@ -190,54 +180,20 @@
     background: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
 }
 
-@media screen and (max-width:760px) {
-    .product {
-        width: 0;
-        margin: calc(50vh + 10px) auto;
-    }
 
-    .showBack {
-        max-width: 375px;
+@media screen and (max-width:760px) {
+    .product:before {
+        animation: scaleVertical 1s ease forwards;
     }
 
     .resultCard {
-        padding: 32px;
-        width: 375px;
-        transform: translate(-50%, 0);
-        transition: transform 2s;
-    }
-
-    .moveResult {
-        left: 50%;
-        top: -50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .description {
-        margin-bottom: 0;
-        font-size: 14px;
-        margin: 5% auto;
+        padding: 24px;
+        animation: moveUp 1s ease forwards;
     }
 
     .summaryCard {
         padding: 24px;
-        transition: top 2s;
-        width: 375px;
-        border-radius: 0 0 32px 32px;
-        box-shadow: 5px 30px 40px 10px var(--pale-blue);
-    }
-
-    .showSummary {
-        left: 50%;
-        top: 100%;
-    }
-
-    .summaryTitle {
-        padding-bottom: 24px;
-    }
-
-    .button {
-        margin-top: 20px;
+        animation: moveDown 1s ease forwards;
     }
 }
 

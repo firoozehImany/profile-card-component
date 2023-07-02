@@ -35,7 +35,7 @@
     }
 
     100% {
-        transform: translate(0, 60%);
+        transform: translate(0,60%);
         height: auto;
     }
 }
@@ -52,7 +52,7 @@
 
 @keyframes scaleVertical {
     0% {
-        height: auto;
+        height: 0;
     }
 
     100% {

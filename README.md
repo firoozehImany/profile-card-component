@@ -41,7 +41,7 @@ Users should be able to:
 - CSS Motion
 - Responsive Design
 - Dedicated JavaScript
-- fetch
+- fetch API
 
 ## Author
 

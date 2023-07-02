@@ -42,7 +42,6 @@
     font-size: 24px;
     margin: 0;
     padding-bottom: 34px;
-    padding-right: 6px;
 }
 
 .averageScore {
@@ -59,7 +58,6 @@
 .averageNum {
     font-size: 70px;
     font-weight: 800;
-    height: 85px;
     color: var(--white);
     transition: all 2s;
 }
@@ -97,7 +95,7 @@
 .summaryTitle {
     font-size: 24px;
     margin: 0;
-    padding-bottom: 28.5px;
+    padding-bottom: 28px;
     text-align: left;
     color: var(--dark-gray-blue)
 }
@@ -178,31 +176,4 @@
 
 .button:hover {
     background: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
-}
-
-
-@media screen and (max-width:760px) {
-    .product:before {
-        animation: scaleVertical 1s ease forwards;
-    }
-
-    .resultCard {
-        padding: 24px;
-        animation: moveUp 1s ease forwards;
-    }
-
-    .summaryCard {
-        padding: 24px;
-        animation: moveDown 1s ease forwards;
-    }
-}
-
-@media screen and (max-width:400px) {
-    .resultCard {
-        border-radius: 0 0 32px 32px;
-    }
-
-    .summaryCard {
-        border-radius: 0;
-    }
 }

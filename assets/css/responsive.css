@@ -1,8 +1,6 @@
 @media screen and (max-width:760px) {
     .product:before {
-        height: 0;
-        animation: scaleVertical 1s ease forwards;
-        animation-delay: 2s;
+        display: none;
     }
 
     .resultCard {
@@ -42,11 +40,11 @@
 
     .summaryCard {
         padding: 24px;
-        height: 0;
-        overflow: hidden;
+        opacity: 0;
         border-radius: 0 0 32px 32px;
         animation: moveDown 1s ease forwards;
         animation-delay: 2s;
+        box-shadow: 0 20px 50px 10px var(--pale-blue);
     }
 
     .button {

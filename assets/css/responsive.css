@@ -1,14 +1,21 @@
 @media screen and (max-width:760px) {
+    .product {
+        flex-direction: column;
+        height: auto;
+    }
+
     .product:before {
-        display: none;
+        height: 0;
+        animation: scaleVertical 1s ease forwards;
+        animation-delay: 2s;
     }
 
     .resultCard {
         padding: 24px;
         border-radius: 0 0 32px 32px;
-        animation: moveUp 1s ease forwards;
+        transform: translateX(0);
+        animation: fixed;
         animation-delay: 2s;
-        top: 0
     }
 
     .averageScore {
@@ -25,10 +32,6 @@
         padding-bottom: 18px;
     }
 
-    .summaryTitle {
-        font-size: 18px;
-    }
-
     .score {
         font-size: 24px;
     }
@@ -39,12 +42,17 @@
     }
 
     .summaryCard {
-        padding: 24px;
+        padding: 20px;
         opacity: 0;
         border-radius: 0 0 32px 32px;
         animation: moveDown 1s ease forwards;
         animation-delay: 2s;
-        box-shadow: 0 20px 50px 10px var(--pale-blue);
+        /* box-shadow: 0 20px 50px 10px var(--pale-blue); */
+    }
+
+    .summaryTitle {
+        font-size: 18px;
+        padding-bottom: 20px;
     }
 
     .button {

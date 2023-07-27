@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .product:before {
@@ -23,7 +23,6 @@
 }
 
 .resultCard {
-    position: absolute;
     display: flex;
     z-index: 3;
     flex-direction: column;
@@ -33,6 +32,7 @@
     border-radius: 32px;
     padding: 38px 59px;
     color: var(--light-lavender);
+    transform: translateX(50%);
     background: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
     animation: moveLeft 1s ease forwards;
     animation-delay: 2s;
@@ -81,7 +81,6 @@
 }
 
 .summaryCard {
-    position: absolute;
     background: var(--white);
     border-radius: 32px;
     text-align: center;
@@ -89,6 +88,7 @@
     width: 368px;
     animation: moveRight 1s ease forwards;
     animation-delay: 2s;
+    transform: translateX(-50%);
     z-index: 2;
 }
 
